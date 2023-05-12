@@ -1,0 +1,17 @@
+@media screen and (max-width: 595px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .price {
+        text-align: center;
+    }
+    .title h1 {
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    .btn button {
+        width: 50%;
+    }
+}

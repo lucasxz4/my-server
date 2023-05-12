@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+:root {
+    --color01: #F1404B;
+    --color02: #FCFCFC;
+    --color03: #616970;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+}
+body {
+    background-color: #000;
+    color: var(--color02);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+header img {
+    cursor: pointer;
+    height: 100%;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 40px 20px;
+}
+
+.plano {
+    font-size: 2rem;
+    color: var(--color01);
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2.5px solid #f4576295;
+    text-align: center;
+}
+
+.price {
+    color: #fff;
+    font-weight: 900;
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+.price span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    list-style-type: '✔';
+    list-style-position: inside;
+    font-size: 20px;
+    line-height: 2;
+}
+
+ul li::marker {
+    color: rgba(21, 255, 0, 0.474);
+}
+
+aside {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    transition: all .2s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: var(--color01);
+    color: var(--color02);
+}
